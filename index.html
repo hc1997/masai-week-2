@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TYPEWRITER</title>
+    <style type="text/css">
+    #masai{
+        margin-top: 150px;
+        margin-left: 270px;
+        border: 3px solid black;
+        height: 80px;   
+        width: 850px;
+        font-size: 25px;
+    }
+    #button1{
+        margin-top: 20px;
+        margin-left: 270px; 
+    }
+        
+    .boxcolor{
+        background-color: black;
+    }
+    .special_char{
+        font-family: sans-serif;
+        font-size: 25px;
+        text-align: right;
+        color: white;  
+        margin-top: -25px; 
+    }
+    .font{
+        font-family: sans-serif;
+        font-size: 25px;
+        text-align: left;
+        color: white;
+        margin-top: -5px;  
+    }
+    .font_number{
+        border: 2px solid black;
+        height: 60px;
+        width: 60px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .font_char{
+        margin-left: 15px;
+        margin-top: 20px;
+        height: 60px;
+        width: 60px;
+        border: 2px solid black;
+        font-family: sans-serif;
+        font-size: 25px;
+        text-align:center;
+        color: white;
+    }
+    .margin_row1{
+        margin-left: 310px;
+    }
+    .margin_row2{
+        margin-left: 347px;
+    }
+    .margin_row3{
+        margin-left: 389px;
+    }
+    #space{
+        margin-top: 20px;
+        margin-left: 460px;
+        height: 60px;
+        width: 480px;
+    }
+    #pass{
+        margin-top: 30;
+        margin-left: 580px;
+        height: 70px;
+        width: 250px;
+    }
+    </style>
+</head>
+
+<body>
+        <div id="masai"></div>
+
+        <button id="button1" class="boxcolor font font_number" onclick="display('1')" value="1">1
+            <p class="special_char">!</p>
+        </button>
+        
+        <button  class="boxcolor font font_number" onclick="display('2')" value="2">2
+            <p class="special_char">@</p>
+        </button>
+    
+        <button class="boxcolor font font_number" onclick="display('3')" value="3">3
+                <p class="special_char">#</p>
+        </button>
+    
+        <button class="boxcolor font font_number" onclick="display('4')" value="4">4
+                <p class="special_char">$</p>
+        </button>
+    
+        <button class="boxcolor font font_number" onclick="display('5')" value="5">5
+                <p class="special_char">%</p>
+        </button>
+    
+        <button class="boxcolor font font_number" onclick="display('6')" value="6">6
+                <p class="special_char">^</p>
+        </button>
+    
+        <button  class="boxcolor font font_number" onclick="display('7')" value="7">7
+                <p class="special_char">&</p>
+        </button>
+    
+        <button class="boxcolor font font_number" onclick="display('8')" value="8">8
+                <p class="special_char">*</p>
+        </button>
+    
+        <button  class="boxcolor font font_number" onclick="display('9')" value="9">9
+                <p class="special_char">(</p>
+        </button>
+    
+        <button  class="boxcolor font font_number" onclick="display('0')" value="0">0
+                <p class="special_char">)</p>
+        </button>
+    
+        <button id="deletion" class="boxcolor font font_char" onclick="del()" value="del">DEL
+                <p class="special_char"></p>
+        </button>
+    
+        <button  class="boxcolor font_char margin_row1" onclick="display('q')" value="1">Q  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('w')" value="w">W   
+        </button>
+    
+        <button  class="boxcolor font_char" onclick="display('e')" value="e">E    
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('r')" value="r">R  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('t')" value="t">T  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('y')" value="y">Y  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('u')" value="u">U  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('i')" value="i">I  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('o')" value="o">O  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('p')" value="p">P  
+        </button>
+    
+        <button  class="boxcolor font_char margin_row2 " onclick="display('a')" value="1">A
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('s')" value="s">S  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('d')" value="d">D
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('f')" value="f">F
+        </button>
+        
+        <button  class="boxcolor font_char " onclick="display('g')" value="g">G  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('h')" value="h">H  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('j')" value="j">J  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('k')" value="k">K  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('l')" value="l">L  
+        </button>
+    
+        <button  class="boxcolor font_char margin_row3 " onclick="display('z')" value="l">Z  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('x')" value="x">X  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('c')" value="c">C  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('v')" value="v">V
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('b')" value="b">B  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('n')" value="n">N  
+        </button>
+    
+        <button  class="boxcolor font_char " onclick="display('m')" value="m">M  
+        </button>
+    
+        <button  class="boxcolor font_char " style="padding: 1px;font-size: 20px;" onclick="display('.com')" value=".com">.com  
+        </button>
+    
+        <button id="space" class="box_color " onclick="display(' ')" value=""> 
+        </button>
+    
+        <button id="pass" class=" font_char " style="padding: 1px; color: black;" onclick="password()" value="password">PASSWORD
+        </button>
+    
+        <script>
+           var hello=false;
+            function display(val)
+            {    
+                if(hello==true)
+                {
+                    var password="";
+                    var stringg=document.getElementById("masai").innerHTML;   
+                    for(var i=0;i<stringg.length;i++)
+                    {
+                        password=password+"*";
+                    }
+                    stringg="";
+                    document.getElementById("pass").style.color = "darkgreen";
+                    document.getElementById("masai").innerHTML=stringg+password;
+                }
+                if (hello==false) 
+                {
+                   password=password+stringg
+                   document.getElementById("pass").style.color = "black";
+                }
+                document.getElementById("masai").innerHTML +=val;
+                return val;
+            }
+        
+            function del()
+            {
+                var str=document.getElementById("masai").innerHTML
+                var neww =str.substring(0, str.length - 1);
+                document.getElementById("masai").innerHTML = neww;
+            }
+            function password()
+            {
+                if (hello==true) 
+                {
+                    hello=false;
+                }
+                else if (hello==false) 
+                {
+                    hello=true;
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
+    
